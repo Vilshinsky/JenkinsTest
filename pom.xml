@@ -10,7 +10,7 @@
 
 <dependencies>
     <dependency>
-        <gropuId>org.seleniumhq.selenium</gropuId>
+        <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>2.48.2</version>
     </dependency>
@@ -23,7 +23,7 @@
     <build>
         <plugins>
             <plugin>
-                <gropuId>org.apache.maven.plugins</gropuId>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
