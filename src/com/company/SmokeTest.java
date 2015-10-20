@@ -3,16 +3,16 @@ package com.company;
 import org.junit.*;
 
 public class SmokeTest {
-    //    @BeforeClass
-//    public static void precondition() {
-//        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
-//        TestHelper.setResolution(1212, 900);
-//        LogInPage.newAccount();
-//        TestHelper.quit();
-//    }
+        @BeforeClass
+    public static void precondition() {
+        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
+        TestHelper.setResolution(1212, 900);
+        LogInPage.newAccount();
+        TestHelper.quit();
+    }
     @Before
     public void preconditions() {
-        TestHelper.setupChromeAndGoToCI(Gigya.pageQAPGAT);
+        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
     }
     @After
@@ -24,10 +24,8 @@ public class SmokeTest {
     @Test
     public void should() {
         LogInPage.goToAuthorization();
-        LogInPage.goToRegistration();
-        LogInPage.fillRegForm();
-        LogInPage.goToRegistrationStep2();
-        LogInPage.goToRegistrationStep3();
+        LogInPage.passAuthorization();
+        ProfilePage.goToProfile();
         System.out.println(TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
     }
 
@@ -58,5 +56,12 @@ public class SmokeTest {
         LogInPage.goToRegistrationStep2();
         LogInPage.goToRegistrationStep3();
         Assert.assertEquals(LogInPage.regForm3AllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
+    }
+    @Test
+    public void shouldMatchProfileFormTexts() {
+        LogInPage.goToAuthorization();
+        LogInPage.passAuthorization();
+        ProfilePage.goToProfile();
+        Assert.assertEquals(ProfilePage.profileFormAllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
     }
 }
