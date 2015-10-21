@@ -1,4 +1,4 @@
-package test.java.company;
+package java.company;
 
 import main.java.company.Gigya;
 import main.java.company.LogInPage;
