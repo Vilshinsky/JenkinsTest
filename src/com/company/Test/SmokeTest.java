@@ -1,5 +1,9 @@
-package com.company;
+package com.company.Test;
 
+import com.company.Gigya;
+import com.company.LogInPage;
+import com.company.ProfilePage;
+import com.company.TestHelper;
 import org.junit.*;
 
 public class SmokeTest {
