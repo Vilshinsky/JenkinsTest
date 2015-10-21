@@ -2,11 +2,11 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/Gigya.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/LogInPage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/ProfilePage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/TestHelper.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test/java/SmokeTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/company/Gigya.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/company/LogInPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/company/ProfilePage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/company/TestHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/company/SmokeTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

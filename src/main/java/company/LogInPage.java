@@ -1,6 +1,5 @@
-package com.company;
+package main.java.company;
 
-import com.company.TestHelper;
 import org.openqa.selenium.By;
 
 public class LogInPage {

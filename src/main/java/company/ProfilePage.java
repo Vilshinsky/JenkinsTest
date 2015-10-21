@@ -1,6 +1,5 @@
-package com.company;
+package main.java.company;
 
-import com.company.TestHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

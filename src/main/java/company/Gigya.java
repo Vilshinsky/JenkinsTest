@@ -1,6 +1,5 @@
-package com.company;
+package main.java.company;
 
-import com.company.TestHelper;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
