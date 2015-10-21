@@ -29,7 +29,7 @@
                 <version>2.19</version>
                 <configuration>
                     <includes>
-                        <include>java.SmokeTest.java</include>
+                        <include>SmokeTest.java</include>
                     </includes>
                 </configuration>
             </plugin>
