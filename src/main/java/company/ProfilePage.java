@@ -331,7 +331,7 @@ public class ProfilePage {
             "Syria\n" +
             "Taiwan\n" +
             "Tajikistan\n" +
-            "Tanzania + United Republic of\n" +
+            "Tanzania, United Republic of\n" +
             "Thailand\n" +
             "Timor-leste\n" +
             "Togo\n" +
@@ -354,8 +354,8 @@ public class ProfilePage {
             "Vatican City\n" +
             "Venezuela\n" +
             "Vietnam\n" +
-            "Virgin Islands + British\n" +
-            "Virgin Islands + U.S.\n" +
+            "Virgin Islands, British\n" +
+            "Virgin Islands, U.S.\n" +
             "Wallis and Futuna\n" +
             "Western Sahara\n" +
             "Yemen\n" +

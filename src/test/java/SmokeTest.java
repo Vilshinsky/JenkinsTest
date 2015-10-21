@@ -5,7 +5,7 @@ import company.TestHelper;
 import org.junit.*;
 
 public class SmokeTest {
-        @BeforeClass
+    @BeforeClass
     public static void precondition() {
         TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
@@ -46,7 +46,7 @@ public class SmokeTest {
     public void shouldMatchRegFormStep2Texts() {
         LogInPage.goToAuthorization();
         LogInPage.goToRegistration();
-        TestHelper.generateStringValue();
+        Gigya.generateNewEmail();
         LogInPage.fillRegForm();
         LogInPage.goToRegistrationStep2();
         Assert.assertEquals(LogInPage.regForm2AllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
@@ -55,7 +55,7 @@ public class SmokeTest {
     public void shouldMatchRegFormStep3Texts() {
         LogInPage.goToAuthorization();
         LogInPage.goToRegistration();
-        TestHelper.generateStringValue();
+        Gigya.generateNewEmail();
         LogInPage.fillRegForm();
         LogInPage.goToRegistrationStep2();
         LogInPage.goToRegistrationStep3();
