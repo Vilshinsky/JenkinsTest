@@ -1,9 +1,9 @@
-package java.company;
+package java;
 
-import main.java.company.Gigya;
-import main.java.company.LogInPage;
-import main.java.company.ProfilePage;
-import main.java.company.TestHelper;
+import main.java.Gigya;
+import main.java.LogInPage;
+import main.java.ProfilePage;
+import main.java.TestHelper;
 import org.junit.*;
 
 public class SmokeTest {

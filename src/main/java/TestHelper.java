@@ -1,4 +1,4 @@
-package main.java.company;
+package main.java;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
