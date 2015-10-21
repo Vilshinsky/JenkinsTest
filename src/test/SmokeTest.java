@@ -1,5 +1,3 @@
-package java;
-
 import main.java.Gigya;
 import main.java.LogInPage;
 import main.java.ProfilePage;
