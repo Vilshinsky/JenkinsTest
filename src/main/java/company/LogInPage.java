@@ -1,4 +1,4 @@
-package main.java;
+package company;
 
 import org.openqa.selenium.By;
 
