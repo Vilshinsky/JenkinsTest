@@ -231,8 +231,8 @@ public class ProfilePage {
             "Kazakhstan\n" +
             "Kenya\n" +
             "Kiribati\n" +
-            "Korea + North\n" +
-            "Korea + South\n" +
+            "Korea, North\n" +
+            "Korea, South\n" +
             "Kosovo\n" +
             "Kuwait\n" +
             "Kyrgyzstan\n" +
@@ -259,8 +259,8 @@ public class ProfilePage {
             "Mauritius\n" +
             "Mayotte\n" +
             "Mexico\n" +
-            "Micronesia + Federated States of\n" +
-            "Moldova + Republic of\n" +
+            "Micronesia, Federated States of\n" +
+            "Moldova, Republic of\n" +
             "Monaco\n" +
             "Mongolia\n" +
             "Montenegro\n" +
@@ -508,5 +508,5 @@ public class ProfilePage {
             "Zip code:\n" +
             "Avatar\n" +
             "Choose File No file chosen\n" +
-            "Maximum size of 3MB. JPG + GIF + PNG.";
+            "Maximum size of 3MB. JPG, GIF, PNG.";
 }
