@@ -1,6 +1,10 @@
 package company;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LogInPage {
     public static String loginButton = "//*[@class='login-button log-in']";
@@ -191,6 +195,28 @@ public class LogInPage {
                 .getText();
     }
 
+    public static ArrayList<String> authFormTexts() {
+        ArrayList<String> pff = new ArrayList<String>();
+        pff.add("Login");
+        pff.add("Register or login with your social network:");
+        pff.add("Or, login with your email here:");
+        pff.add("Email:");
+        pff.add("Password:");
+        pff.add(" Forgot password");
+        pff.add(" Remember me");
+        pff.add("");
+        pff.add("Don't have an account yet?\nRegister with a social network or Click here");
+        pff.add("Click here");
+        return pff;
+    }
+    public static ArrayList<String> getListAuthFormTexts() {
+        ArrayList<String> texts = new ArrayList<String>();
+        List<WebElement> list = TestHelper.driver.findElements(By.xpath("//*[@class='gigya-screen-dialog']//*[normalize-space(text()) != '']"));
+        for(int i = 0; i <= list.size() - 1; i++) {
+            texts.add(list.get(i).getText());
+        }
+        return texts;
+    }
     public static String authFormAllTexts = "Login\n" +
             "Register or login with your social network:\n" +
             "Or, login with your email here:\n" +

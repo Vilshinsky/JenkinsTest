@@ -34,14 +34,16 @@ public class SmokeTest {
     @Test
     public void shouldMatchLogInFormTexts() {
         LogInPage.goToAuthorization();
-        Assert.assertEquals(LogInPage.authFormAllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
+        Assert.assertEquals(LogInPage.authFormTexts(), LogInPage.getListAuthFormTexts());
     }
+    @Ignore
     @Test
     public void shouldMatchRegFormStep1Texts() {
         LogInPage.goToAuthorization();
         LogInPage.goToRegistration();
         Assert.assertEquals(LogInPage.regFormStep1AllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
     }
+    @Ignore
     @Test
     public void shouldMatchRegFormStep2Texts() {
         LogInPage.goToAuthorization();
@@ -51,6 +53,7 @@ public class SmokeTest {
         LogInPage.goToRegistrationStep2();
         Assert.assertEquals(LogInPage.regForm2AllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
     }
+    @Ignore
     @Test
     public void shouldMatchRegFormStep3Texts() {
         LogInPage.goToAuthorization();
@@ -61,6 +64,7 @@ public class SmokeTest {
         LogInPage.goToRegistrationStep3();
         Assert.assertEquals(LogInPage.regForm3AllTexts, TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
     }
+    @Ignore
     @Test
     public void shouldMatchProfileFormTexts() {
         LogInPage.newAccount();
