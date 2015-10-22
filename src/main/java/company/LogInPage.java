@@ -57,6 +57,7 @@ public class LogInPage {
     public static void goToAuthorization() {
         TestHelper.waitSec(4);
         TestHelper.waitElementByXpath(loginButton).click();
+        TestHelper.waitElementByXpath("//*[@gigid='facebook']/div");
     }
     public static void goToRegistration() {
         TestHelper.waitElementByXpath(regButton).click();
