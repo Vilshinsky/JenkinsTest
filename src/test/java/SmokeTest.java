@@ -7,7 +7,7 @@ import org.junit.*;
 public class SmokeTest {
     @BeforeClass
     public static void precondition() {
-        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
+        TestHelper.setupChromeAndGoToCI(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
         LogInPage.newAccount();
         TestHelper.quit();
