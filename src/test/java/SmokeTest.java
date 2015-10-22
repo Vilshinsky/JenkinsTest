@@ -14,7 +14,7 @@ public class SmokeTest {
     }
     @Before
     public void preconditions() {
-        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
+        TestHelper.setupChromeAndGoToCI(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
     }
     @After
