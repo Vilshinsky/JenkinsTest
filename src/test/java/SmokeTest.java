@@ -3,18 +3,19 @@ import company.LogInPage;
 import company.ProfilePage;
 import company.TestHelper;
 import org.junit.*;
+import ru.yandex.qatools.ashot.AShot;
 
 public class SmokeTest {
     @BeforeClass
     public static void precondition() {
-        TestHelper.setupChromeAndGoToCI(Gigya.pageQAPGAT);
+        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
         LogInPage.newAccount();
         TestHelper.quit();
     }
     @Before
     public void preconditions() {
-        TestHelper.setupChromeAndGoToCI(Gigya.pageQAPGAT);
+        TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
         TestHelper.setResolution(1212, 900);
     }
     @After
@@ -28,7 +29,7 @@ public class SmokeTest {
         LogInPage.goToAuthorization();
         LogInPage.passAuthorization();
         ProfilePage.goToProfile();
-        System.out.println(TestHelper.waitElementByCss(".gigya-screen-dialog").getText());
+        new AShot().takeScreenshot(TestHelper.driver, TestHelper.waitElementByCss(".gigya-screen-dialog"));
     }
 
     @Test
