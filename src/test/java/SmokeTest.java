@@ -3,9 +3,32 @@ import company.LogInPage;
 import company.ProfilePage;
 import company.TestHelper;
 import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import ru.yandex.qatools.ashot.AShot;
 
+import java.util.Arrays;
+
+@RunWith(Parameterized.class)
 public class SmokeTest {
+    @Parameterized.Parameters
+    public static Iterable<Object[]> data() {
+        return Arrays.asList(new Object[][] {
+            { "1+2", new Integer(1) },
+            { "3*2", new Integer(3) }
+        });
+    }
+    private String input;
+    private double result;
+    public SmokeTest(String input, double result) {
+        this.input = input;
+        this.result = result;
+    }
+    @Test
+    public void test() {
+        Assert.assertEquals(result, );
+    }
+
     @BeforeClass
     public static void precondition() {
         TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
@@ -37,6 +60,11 @@ public class SmokeTest {
         LogInPage.goToAuthorization();
         Assert.assertEquals(LogInPage.authFormTexts(), LogInPage.getListAuthFormTexts());
     }
+    @Test
+    public void galen() {
+
+    }
+
     @Ignore
     @Test
     public void shouldMatchRegFormStep1Texts() {
