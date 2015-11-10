@@ -8,12 +8,11 @@
     <artifactId>JenkinsTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <aspectj.version>1.8.7</aspectj.version>
+        <allure.version>1.4.19</allure.version>
+    </properties>
 <dependencies>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>2.48.2</version>
-    </dependency>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -21,24 +20,9 @@
         <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>ru.yandex.qatools.ashot</groupId>
-        <artifactId>ashot</artifactId>
-        <version>1.4.12</version>
-    </dependency>
-    <dependency>
-        <groupId>com.galenframework</groupId>
-        <artifactId>galen-core</artifactId>
-        <version>2.1.2</version>
-    </dependency>
-    <dependency>
-        <groupId>com.galenframework</groupId>
-        <artifactId>galen-rainbow4j</artifactId>
-        <version>2.1.2</version>
-    </dependency>
-    <dependency>
-        <groupId>com.galenframework</groupId>
-        <artifactId>galen-java-support</artifactId>
-        <version>2.1.2</version>
+        <groupId>ru.yandex.qatools.allure</groupId>
+        <artifactId>allure-junit-adaptor</artifactId>
+        <version>1.4.19</version>
     </dependency>
 </dependencies>
     <build>
@@ -48,10 +32,24 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19</version>
                 <configuration>
-                    <includes>
-                        <include>SmokeTest.java</include>
-                    </includes>
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <argLine>
+                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                    </argLine>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>ru.yandex.qatools.allure.junit.AllureRunListener</value>
+                        </property>
+                    </properties>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.8.7</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
