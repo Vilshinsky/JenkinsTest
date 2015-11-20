@@ -212,7 +212,7 @@ public class LogInPage {
     }
     public static ArrayList<String> getListAuthFormTexts() {
         ArrayList<String> texts = new ArrayList<String>();
-        List<WebElement> list = TestHelper.driver.findElements(By.xpath("//*[@class='gigya-screen-dialog']//*[normalize-space(text()) != '']"));
+        List<WebElement> list = TestHelper.driver.findElements(By.xpath("//*[@id='gigya-modal-plugin-container-showScreenSet']//*[normalize-space(text()) != '']"));
         for(int i = 0; i <= list.size() - 1; i++) {
             texts.add(list.get(i).getText());
         }
