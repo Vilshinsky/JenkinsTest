@@ -198,7 +198,7 @@ public class LogInPage {
 
     public static ArrayList<String> authFormTexts() {
         ArrayList<String> pff = new ArrayList<String>();
-        pff.add("Login111");
+        pff.add("Login");
         pff.add("Register or login with your social network:");
         pff.add("Or, login with your email here:");
         pff.add("Email:");
