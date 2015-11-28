@@ -205,7 +205,6 @@ public class LogInPage {
         pff.add("Password:");
         pff.add(" Forgot password");
         pff.add(" Remember me");
-        pff.add("");
         pff.add("Don't have an account yet?\nRegister with a social network or Click here");
         pff.add("Click here");
         return pff;
