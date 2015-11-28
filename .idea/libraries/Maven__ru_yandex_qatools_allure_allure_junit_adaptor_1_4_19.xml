@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: ru.yandex.qatools.allure:allure-junit-adaptor:1.4.19">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-junit-adaptor/1.4.19/allure-junit-adaptor-1.4.19.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-junit-adaptor/1.4.19/allure-junit-adaptor-1.4.19-javadoc.jar!/" />
     </JAVADOC>
