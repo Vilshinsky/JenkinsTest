@@ -209,6 +209,7 @@ public class LogInPage {
         pff.add("Click here");
         return pff;
     }
+
     public static ArrayList<String> getListAuthFormTexts() {
         ArrayList<String> texts = new ArrayList<String>();
         List<WebElement> list = TestHelper.driver.findElements(By.xpath("//*[@id='gigya-modal-plugin-container-showScreenSet']//*[normalize-space(text()) != '']"));
