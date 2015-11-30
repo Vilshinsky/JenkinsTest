@@ -4,7 +4,7 @@ import company.ProfilePage;
 import company.TestHelper;
 import org.junit.*;
 
-public class SmokeTest1 {
+public class ASmokeTest1 {
     @BeforeClass
     public static void precondition() {
         TestHelper.setupChromeAndGo(Gigya.pageQAPGAT);
